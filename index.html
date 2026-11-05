@@ -8,8 +8,12 @@ header,footer{background:var(--navy);color:white;padding:24px 20px} .inner,.page
 .top,.mid{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-weight:700}.mid{margin-top:12px;font-weight:400}
 a{color:#ffe17a}.rule{width:76px;height:3px;background:var(--gold);border-radius:4px;margin:20px auto 14px}
 .signature{text-align:center;color:#ffe17a;font-weight:800}.tagline{text-align:center;margin:5px 0 0;font-size:.92rem}
-.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;margin-top:28px}.hero h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;margin:8px 0}.hero p{color:#edf3ff}
-.art{background:#fff;border-radius:18px;padding:10px}.art svg{width:100%;display:block}
+
+/* NEW HEADER STYLES */
+.hero-new{text-align:center; margin-top:20px;}
+.hero-new h1{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;margin:8px 0; color:white;}
+.hero-new p{color:#edf3ff; max-width:800px; margin: 0 auto; font-size: 1.1rem;}
+
 .page{padding:24px 18px 46px}.notice,.callout{padding:14px 17px;border-radius:12px;background:#fff8df;border:1px solid #f0dfaa;margin:14px 0}
 section{background:white;border:1px solid var(--line);border-radius:17px;padding:23px;margin:18px 0;box-shadow:0 10px 28px #142f5d10}
 h2{color:var(--navy);margin:0 0 12px;font-size:1.35rem}h3{color:#1e477f;margin:14px 0 6px}blockquote{margin:13px 0;padding:13px 17px;background:#eff5ff;border-left:4px solid var(--blue);border-radius:0 10px 10px 0;font-weight:700}
@@ -23,16 +27,27 @@ table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid v
 .progress-label{display:flex;justify-content:space-between;color:var(--muted);font-size:.9rem}.track{height:8px;background:#e5ebf3;border-radius:10px;overflow:hidden;margin:7px 0 14px}.bar{height:100%;width:0;background:linear-gradient(90deg,#2563eb,#22a06b)}
 .actions{text-align:center;margin:22px}button{background:var(--navy);color:#fff;border:0;border-radius:30px;padding:14px 24px;font-weight:bold;font-size:1rem;cursor:pointer}button:hover{background:#244b86}
 footer .rule{margin:19px auto 14px}
-@media(max-width:740px){.hero{grid-template-columns:1fr}.art{max-width:430px;margin:auto}.stats{grid-template-columns:repeat(2,1fr)}.partners{grid-template-columns:repeat(2,1fr)}.examples{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.choices{grid-template-columns:1fr}section{padding:17px}.top,.mid{flex-direction:column;align-items:flex-start}}
+@media(max-width:740px){.stats{grid-template-columns:repeat(2,1fr)}.partners{grid-template-columns:repeat(2,1fr)}.examples{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.choices{grid-template-columns:1fr}section{padding:17px}.top,.mid{flex-direction:column;align-items:flex-start}}
 @media print{body{background:white}section,.question{box-shadow:none;break-inside:avoid}button,.track,.progress-label{display:none}header,footer{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style></head><body>
-<header><div class="inner">
-<div class="top"><span>🏛️ Bath Spa University – Hackney</span><span>BMA5001 – Innovation Management</span></div>
-<div class="mid"><span><b>Module Leader:</b> Mohammad Hbubati</span><a href="mailto:m.hbubati@bathspa.ac.uk">✉️ m.hbubati@bathspa.ac.uk</a></div>
-<div class="rule"></div><div class="signature">🌍 Designed for Active and Sustainable Learning 🌱</div><div class="tagline">Explore ideas, think critically, collaborate responsibly, and turn insight into positive action.</div>
-<div class="hero"><div><b style="color:#ffe17a">CASE STUDY • OPEN INNOVATION</b><h1>🌍 Connect + Develop:<br>How P&amp;G Opened Its Innovation Network</h1><p>Explore how Procter &amp; Gamble moved beyond a closed innovation model and connected its capabilities with ideas from the wider world.</p></div>
-<div class="art" role="img" aria-label="Illustration of a company connected to universities, suppliers, start-ups and researchers"><svg viewBox="0 0 420 230" xmlns="http://www.w3.org/2000/svg"><rect width="420" height="230" rx="14" fill="#eaf2ff"/><g stroke="#86a6d4" stroke-width="3"><path d="M210 112L80 48M210 112L340 48M210 112L80 180M210 112L340 180M210 112L210 20"/></g><g fill="white" stroke="#2563eb" stroke-width="3"><circle cx="210" cy="112" r="43"/><circle cx="80" cy="48" r="27"/><circle cx="340" cy="48" r="27"/><circle cx="80" cy="180" r="27"/><circle cx="340" cy="180" r="27"/><circle cx="210" cy="20" r="17"/></g><g font-size="25" text-anchor="middle" dominant-baseline="central"><text x="210" y="112">🏢</text><text x="80" y="48">🎓</text><text x="340" y="48">🏭</text><text x="80" y="180">🚀</text><text x="340" y="180">🔬</text><text x="210" y="20" font-size="16">💡</text></g><text x="210" y="218" font-size="12" font-weight="bold" fill="#18365f" text-anchor="middle">IDEAS • PARTNERSHIPS • IMPACT</text></svg></div></div>
-</div></header>
+
+<header>
+  <div class="inner">
+    <div class="top">
+      <span>BMA5001 - Innovation Management</span>
+      <span>Session 9 - Activity 3</span>
+    </div>
+    
+    <!-- THE REPLACED HEADER -->
+    <div class="hero-new">
+        <b style="color:#ffe17a">CASE STUDY • OPEN INNOVATION</b>
+        <h1>🌍 Connect + Develop: How P&amp;G Opened Its Innovation Network</h1>
+        <p>Explore how Procter &amp; Gamble moved beyond a closed innovation model and connected its capabilities with ideas from the wider world.</p>
+    </div>
+    
+  </div>
+</header>
+
 <main class="page">
 <div class="notice"><b>👥 How to use this activity:</b> Read the case study, discuss the questions with your group, and record your ideas in the response boxes. Use evidence from the case to support your reasoning.</div>
 <section><h2>1️⃣ Background</h2><p>🧴 Procter &amp; Gamble (P&amp;G) is one of the world's largest consumer goods companies. You probably know many of its brands, including Tide, Pampers, Gillette, Oral-B and Olay.</p><p>For decades, P&amp;G relied on a <b>closed innovation model</b>. The company employed thousands of scientists and invested billions of dollars in research and development (R&amp;D). Its philosophy was simple:</p><blockquote>“The smartest people work for us, so innovation should happen inside the company.”</blockquote><p>For many years, this approach worked well.</p></section>
@@ -55,6 +70,68 @@ footer .rule{margin:19px auto 14px}
 <p class="small">Use the button below to export your group's answers to a Word-compatible document before closing the page.</p><div class="actions"><button id="saveWord" type="button">⬇️ Save as MS Word</button></div>
 </section></main>
 <footer><div class="inner"><div class="top"><span>🏛️ Bath Spa University – Hackney</span><span>BMA5001 – Innovation Management</span></div><div class="mid"><span><b>Module Leader:</b> Mohammad Hbubati</span><a href="mailto:m.hbubati@bathspa.ac.uk">✉️ m.hbubati@bathspa.ac.uk</a></div><div class="rule"></div><div class="signature">🌍 Designed for Active and Sustainable Learning 🌱</div><div class="tagline">Explore ideas, think critically, collaborate responsibly, and turn insight into positive action.</div></div></footer>
+
 <script>
-(()=>{const ids=['q1','q2','q3','q4','q5','q6','q7','q8a','q8b','q8c','q8d','q9','reflection'];const $=id=>document.getElementById(id);function update(){let n=0;for(let i=1;i<=9;i++){let group=i===8?['q8a','q8b','q8c','q8d']:[`q${i}`];if(group.some(id=>$(id).value.trim()))n++}$('progress').style.width=(n/9*100)+'%';$('progressText').textContent=n+' of 9 questions started'}ids.forEach(id=>$(id).addEventListener('input',update));document.querySelectorAll('[name=q6choice]').forEach(x=>x.addEventListener('change',update));function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))} $('saveWord').addEventListener('click',()=>{const selected=document.querySelector('[name=q6choice]:checked');const entries=[['1. Closed innovation model', $('q1').value],['2. The 200 scientists insight',$('q2').value],['3. Changes under Connect + Develop',$('q3').value],['4. Pringles Prints',$('q4').value],['5. External networks and performance',$('q5').value],['6. Highest-value external partner',(selected?selected.value+' — ':'')+$('q6').value],['7. Manufacturing partners',$('q7').value],['8. Proposed collaboration','Problem: '+$('q8a').value+'\\nPartner: '+$('q8b').value+'\\nKnowledge/resource: '+$('q8c').value+'\\nExpected benefit: '+$('q8d').value],['9. Convincing the CEO',$('q9').value],['Final reflection',$('reflection').value]];let content='<h1>BMA5001 – Innovation Management</h1><h2>Connect + Develop: How P&amp;G Opened Its Innovation Network</h2><p><b>Group name:</b> ____________________ &nbsp; <b>Members:</b> ____________________</p>';entries.forEach(([q,a])=>content+='<h3>'+esc(q)+'</h3><p>'+esc(a.trim()||'Not completed').replace(/\n/g,'<br>')+'</p>');content+='<hr><p>Bath Spa University – Hackney | Designed for Active and Sustainable Learning</p>';const blob=new Blob(['\ufeff','<!doctype html><html><head><meta charset="utf-8"></head><body>'+content+'</body></html>'],{type:'application/msword'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='BMA5001_PG_Connect_and_Develop_Group_Responses.doc';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000)});update()})();
-</script></body></html>
+// FIXED ORIGINAL SCRIPT
+(()=>{
+  const ids=['q1','q2','q3','q4','q5','q6','q7','q8a','q8b','q8c','q8d','q9','reflection'];
+  const $=id=>document.getElementById(id);
+  
+  function update(){
+    let n=0;
+    for(let i=1;i<=9;i++){
+      let group=i===8?['q8a','q8b','q8c','q8d']:[`q${i}`];
+      if(group.some(id=>$(id) && $(id).value.trim()))n++;
+    }
+    if($('progress')) $('progress').style.width=(n/9*100)+'%';
+    if($('progressText')) $('progressText').textContent=n+' of 9 questions started';
+  }
+  
+  ids.forEach(id=>{ if($(id)) $(id).addEventListener('input',update); });
+  document.querySelectorAll('[name=q6choice]').forEach(x=>x.addEventListener('change',update));
+  
+  // The fix: correctly escaping the text
+  function esc(s){
+    if (!s) return '';
+    return s.toString().replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  }
+  
+  if($('saveWord')){
+    $('saveWord').addEventListener('click',()=>{
+      const selected=document.querySelector('[name=q6choice]:checked');
+      const entries=[
+        ['1. Closed innovation model', $('q1').value],
+        ['2. The 200 scientists insight',$('q2').value],
+        ['3. Changes under Connect + Develop',$('q3').value],
+        ['4. Pringles Prints',$('q4').value],
+        ['5. External networks and performance',$('q5').value],
+        ['6. Highest-value external partner',(selected?selected.value+' — ':'')+$('q6').value],
+        ['7. Manufacturing partners',$('q7').value],
+        ['8. Proposed collaboration','Problem: '+$('q8a').value+'<br>Partner: '+$('q8b').value+'<br>Knowledge/resource: '+$('q8c').value+'<br>Expected benefit: '+$('q8d').value],
+        ['9. Convincing the CEO',$('q9').value],
+        ['Final reflection',$('reflection').value]
+      ];
+      
+      let content='<h1>BMA5001 – Innovation Management</h1><h2>Connect + Develop: How P&amp;G Opened Its Innovation Network</h2><p><b>Group name:</b> ____________________ &nbsp; <b>Members:</b> ____________________</p>';
+      
+      entries.forEach(([q,a])=>{
+        content+='<h3>'+esc(q)+'</h3><p>'+esc(a.trim()||'Not completed').replace(/\n/g,'<br>')+'</p>';
+      });
+      
+      content+='<hr><p>Bath Spa University – Hackney | Designed for Active and Sustainable Learning</p>';
+      
+      const blob=new Blob(['\ufeff','<!doctype html><html><head><meta charset="utf-8"></head><body>'+content+'</body></html>'],{type:'application/msword'});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a');
+      a.href=url;
+      a.download='BMA5001_PG_Connect_and_Develop_Group_Responses.doc';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),2000);
+    });
+  }
+  update();
+})();
+</script>
+</body></html>
